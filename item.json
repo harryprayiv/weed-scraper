@@ -1,0 +1,53 @@
+{
+    "name": "Vaporizers",
+    "items": [
+      {
+        "id": 1,
+        "brand": "Liquid Gold",
+        "name": "Sugar King Live Resin Vape",
+        "description": "You’re likely to be a giddy, giggly mess after sampling the sativa Sour Joker. A full body buzz makes it a good choice for daytime pain relief while also encouraging social and creative vibes. Green Gold Group's Liquid Gold Live Resin cartridges feature the same hybrid, indica, and sativa strains you know and love, in a convenient 510 thread cartridge.",
+        "price": 45.00,
+        "quantity": 50,
+        "subcategories": [
+          "Indica Hybrid",
+          "Live Resin",
+          "1g",
+          "510 Vape Cartridge"
+        ],
+        "metadata": {
+          "THC": "76.08%",
+          "CBD": "0.5%",
+          "strain": "Sour Joker",
+          "cannabinoids": [
+            {"THC-D9": "76.08%"},
+            {"TAC": "80.89%"}
+          ]
+        }
+      },
+      {
+        "id": 3,
+        "brand": "Sticky Fish",
+        "name": "Raspberry Parfait",
+        "description": "Cannabis vaporizers are a great way to consume discreetly and consistently. Vape cartridges contain concentrated cannabis oil that is heated by a battery and vaporized for inhalation. These products are very potent and are designed to be consumed in 2-3 second puffs.",
+        "price": 19.95,
+        "quantity": 47,
+        "subcategories": [
+          "Sativa",
+          "Live Resin",
+          ".5g",
+          "510 Vape Cartridge"
+        ],
+        "metadata": {
+          "THC": "67.61%",
+          "CBD": "0.16%",
+          "strain": "Raspberry Parfait",
+          "cannabinoids": [
+            {"CBG": "1.76%"},
+            {"CBN": "2.66"},
+            {"THC-D9": "676.14"}
+          ]
+        }
+      }
+    ]
+}
+

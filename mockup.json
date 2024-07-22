@@ -1,0 +1,134 @@
+{
+  "dispensaries": [
+    {
+      "id": 1,
+      "name": "Quincy Cannabis Co.",
+      "url": "https://quincycannabis.co/",
+      "companyName": "Cadella, LLC",
+      "location": "42.244947577518445, -70.97211590486586",
+      "categories": [
+        {
+          "name": "Flower",
+          "items": []
+        },
+        {
+          "name": "Pre-Rolls",
+          "items": []
+        },
+        {
+          "name": "Vaporizers",
+          "items": [
+            {
+              "id": 1,
+              "brand": "Wellman Farms",
+              "name": "Sour Joker",
+              "description": "A live resin sativa vape cartridge.",
+              "price": 35.99,
+              "quantity": 12,
+              "subcategories": [
+                "Sativa",
+                "Live Resin",
+                "1g",
+                "510 Vape Cartridge"
+              ],
+              "metadata": {
+                "THC": "75%",
+                "CBD": "0.5%",
+                "strain": "Sour Joker"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Edibles",
+          "items": []
+        },
+        {
+          "name": "Drinks",
+          "items": []
+        },
+        {
+          "name": "Concentrates",
+          "items": []
+        },
+        {
+          "name": "Topicals",
+          "items": []
+        },
+        {
+          "name": "Tinctures",
+          "items": []
+        },
+        {
+          "name": "Accessories",
+          "items": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Misty Mountain Shop",
+      "url": "https://mistymtnshop.com/",
+      "companyName": "Misty Mountain Shop, LLC",
+      "location": "42.4168283544774, -71.07598298887508",
+      "categories": [
+        {
+          "name": "Flower",
+          "items": []
+        },
+        {
+          "name": "Pre-Rolls",
+          "items": []
+        },
+        {
+          "name": "Vaporizers",
+          "items": [
+            {
+              "id": 1,
+              "brand": "Wellman Farms",
+              "name": "Sour Joker",
+              "description": "A live resin sativa vape cartridge.",
+              "price": 40.00,
+              "quantity": 34,
+              "subcategories": [
+                "Sativa",
+                "Live Resin",
+                "1g",
+                "510 Vape Cartridge"
+              ],
+              "metadata": {
+                "THC": "75%",
+                "CBD": "0.5%",
+                "strain": "Sour Joker"
+              }
+            }            
+          ]
+        },
+        {
+          "name": "Edibles",
+          "items": []
+        },
+        {
+          "name": "Drinks",
+          "items": []
+        },
+        {
+          "name": "Concentrates",
+          "items": []
+        },
+        {
+          "name": "Topicals",
+          "items": []
+        },
+        {
+          "name": "Tinctures",
+          "items": []
+        },
+        {
+          "name": "Accessories",
+          "items": []
+        }
+      ]
+    }
+  ]
+}
