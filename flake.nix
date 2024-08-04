@@ -11,7 +11,7 @@
   in rec {
     packages = {
       pythonEnv =
-        pkgs.python3.withPackages (ps: with ps; [ webdriver-manager openpyxl pandas requests beautifulsoup4 websocket-client selenium ]);
+        pkgs.python3.withPackages (ps: with ps; [ webdriver-manager openpyxl pandas requests beautifulsoup4 websocket-client selenium keyboard ]);
     };
 
     devShell = pkgs.mkShell {
