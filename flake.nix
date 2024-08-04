@@ -6,22 +6,24 @@
     utils.url = "github:numtide/flake-utils";
   };
 
-  outputs = {
-    self,
-    nixpkgs,
-    utils,
-  }: (utils.lib.eachSystem ["x86_64-linux"] (system: rec {
+  outputs = { self, nixpkgs, utils }: utils.lib.eachSystem ["x86_64-linux"] (system: let
+    pkgs = import nixpkgs { system = system; };
+  in rec {
     packages = {
       pythonEnv =
-        nixpkgs.legacyPackages.${system}.python3.withPackages
-        (ps: with ps; [requests beautifulsoup4 websocket-client selenium]);
+        pkgs.python3.withPackages (ps: with ps; [ webdriver-manager openpyxl pandas requests beautifulsoup4 websocket-client selenium ]);
     };
-    pkgs.python3Packages.buildPythonPackage = {
-      name = "weed-scraper";
-      src = ./.;
-      propagatedBuildInputs = [(nixpkgs.legacyPackages.${system}.python3.withPackages (ps: with ps; [requests websocket-client beautifulsoup4 selenium]))];
+
+    devShell = pkgs.mkShell {
+      buildInputs = [
+        pkgs.chromium
+        pkgs.undetected-chromedriver
+        packages.pythonEnv
+      ];
+
+      shellHook = ''
+        export PATH=${pkgs.chromium}/bin:${pkgs.undetected-chromedriver}/bin:$PATH
+      '';
     };
-    defaultPackage = packages.pythonEnv; # If you want to just build the environment
-    devShell = packages.pythonEnv.env; # We need .env in order to use `nix develop`
-  }));
+  });
 }
